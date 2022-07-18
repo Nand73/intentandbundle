@@ -16,15 +16,16 @@ public class MainActivity extends AppCompatActivity {
 
         Button clc;
         clc=findViewById(R.id.clc);
-        Intent shift;
-        shift = new Intent(MainActivity.this,SecondActivity.class);
-        shift.putExtra("title","Home");
-        shift.putExtra("name","sunny");
-       shift.putExtra("Roll No","9");
+
 
         clc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent shift;
+                shift = new Intent(MainActivity.this,SecondActivity.class);
+                shift.putExtra("title","Home");
+                shift.putExtra("name","sunny");
+                shift.putExtra("Roll No","9");
 
                 startActivity(shift);
             }

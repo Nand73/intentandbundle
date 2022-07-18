@@ -16,7 +16,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent fromAct = getIntent();
         String title = fromAct.getStringExtra("title");
         String name = fromAct.getStringExtra("name");
-        int roll =fromAct.getIntExtra("Roll No",0);
+        String roll =fromAct.getStringExtra("Roll No");
 
         TextView studentInfo;
         studentInfo=findViewById(R.id.studentInfo);
